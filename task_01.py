@@ -7,6 +7,7 @@ decimal.getcontext().prec = 5
 
 ABSOLUTE_DIFFERENCE = decimal.Decimal('273.15')
 
+
 def fahrenheit_to_celsius(degrees):
     """This function converts fahrenheit to celsius.
 
@@ -24,6 +25,7 @@ def fahrenheit_to_celsius(degrees):
     celsius = ((decimal.Decimal(degrees) - 32)*5)/9
     return celsius
 
+
 def celsius_to_kelvin(degrees):
     """This function converts celsius to kelvin.
 
@@ -40,6 +42,7 @@ def celsius_to_kelvin(degrees):
     """
     kelvin = ABSOLUTE_DIFFERENCE + decimal.Decimal(degrees)
     return kelvin
+
 
 def fahrenheit_to_kelvin(degrees):
     """This function converts  fahrenheit to celsius to kelvin.
